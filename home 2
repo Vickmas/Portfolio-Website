@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VP Trial Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7db1eb2a19.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Home Page-->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/VP.png" class="logo" />
+          <ul id="sidemenu">
+            <h2>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </h2>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text"> 
+          <p>Video Editor</p>
+          <h1>
+            Hi I'm <span>Vickma</span> <br />
+            From Kenya
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--About Page-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/P2.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle1">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              earum doloremque sapiente quae soluta placeat voluptates
+              exercitationem illum, accusamus quas officiis, eligendi tempora,
+              repellendus quaerat animi ducimus omnis aperiam maxime.
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('skills' , event)"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience' , event)">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education' , event)">
+                Education
+              </p>
+            </div>
+            <!--Skills-->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Video Editor</span><br />
+                  Professional at Graphic Motion, Synchronization and FX
+                </li>
+                <li>
+                  <span>Graphic Designer</span><br />
+                  Professional at Logo Design, Enhancements and FX
+                </li>
+                <li>
+                  <span>Web Developer</span><br />
+                  Beginner at Web Development
+                </li>
+              </ul>
+            </div>
+            <!--Experience-->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Current - 2024</span><br />
+                  Enhancing my skills in Web Development
+                </li>
+                <li>
+                  <span>2022</span><br />
+                  My First Year at University
+                </li>
+                <li>
+                  <span>2025</span><br />
+                  My First Internship
+                </li>
+              </ul>
+            </div>
+            <!--Education-->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022 - 2026</span><br />
+                  Computer Science Course in Machakos University
+                </li>
+                <li>
+                  <span>2018 - 2022</span><br />
+                  High School Studies at Nakuru Boys High School
+                </li>
+                <li>
+                  <span>2012 - 2018</span><br />
+                  Primary Studies at Cathsam Primary School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle1">Services</h1>
+        <div class="services-list">
+          <div class="services-item">
+            <i class="fa-solid fa-computer"></i>
+            <h2>Video Editor</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur hic ea unde cum laudantium voluptatibus laboriosam
+              modi perferendis reprehenderit exercitationem eaque, nostrum qui
+              quidem quod aperiam. Quo debitis impedit sint.
+            </p>
+            <a href="#">Learn More</a>
+            </div>
+            <div class="services-item">
+              <i class="fa-brands fa-sketch"></i>
+            <h2>Graphic Designer</h2>            
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur hic ea unde cum laudantium voluptatibus laboriosam
+              modi perferendis reprehenderit exercitationem eaque, nostrum qui
+              quidem quod aperiam. Quo debitis impedit sint.
+            </p>
+            <a href="#">Learn More</a>
+            </div>
+            <div class="services-item">
+              <i class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>            
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur hic ea unde cum laudantium voluptatibus laboriosam
+              modi perferendis reprehenderit exercitationem eaque, nostrum qui
+              quidem quod aperiam. Quo debitis impedit sint.
+            </p>
+            <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle1">Portfolio</h1>
+        <div class="work-list">
+          <div class="work-item">
+            <img src="images/VAD.jpg" alt="">
+            <div class="layer">
+              <h3>Editing Schedule</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab nemo, temporibus in assumenda, quo odio non veniam ut corporis perferendis dignissimos eaque distinctio sed molestias ipsam minus, nulla soluta cum.</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work-item">
+            <img src="images/GD.jpg" alt="">
+            <div class="layer">
+              <h3>Designing Schedule</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab nemo, temporibus in assumenda, quo odio non veniam ut corporis perferendis dignissimos eaque distinctio sed molestias ipsam minus, nulla soluta cum.</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>          
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    <!--Contacts Section-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle1">Contact Me</h1>
+            <p> <i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+            <p> <i class="fa-solid fa-phone"></i> 1234567890</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <a href="images/Profile.jpg" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Vickma productions. </p>
+    </div>
+    </div>
+
+
+    <!--JavaScript-->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname, event) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() 
+      {
+        sidemenu.style.right = "0px";
+      }
+      function closemenu() 
+      {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    
+  </body>
+</html>
